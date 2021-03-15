@@ -1,0 +1,91 @@
+/* slstatus configuration */
+/* See LICENSE file for copyright and license details. */
+
+/* interval between updates (in ms) */
+
+/* text to show if no value can be retrieved */
+static const char unknown_str[] = "n/a";
+
+/* maximum output string length */
+#define MAXLEN 2048
+
+/* output formats */
+static const struct arg args[] = {
+	/* function, format, argument */
+	{ disk_free, " %.5s GiB | ", "/" },
+	{ wifi_perc, "W: (%3s%% on ", "wlp0s20f3" },
+	{ wifi_essid, "%s) ", "wlp0s20f3" },
+	{ ipv4, "%s | ", "wlp0s20f3" },
+	{ run_command, "V: %4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ battery_state, "%s ", "BAT1" },
+	{ battery_perc, "%3s%% | ", "BAT1" },
+	{ datetime, "%s", "[%a] %F %T %Z " },
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
